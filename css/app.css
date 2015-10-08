@@ -1,1 +1,62 @@
-/* Write your code here */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align:center;
+}
+
+img { 
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 40em) { 
+    li {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    li {
+        width:48%;
+    }
+}
+
+@media only screen and (min-width: 64.063em) { 
+    li {
+        width:23%;
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color : white;
+    font-weight: bold; 
+}
+
+.overlay img {
+    width: 50%;
+}
