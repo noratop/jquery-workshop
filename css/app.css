@@ -2,4 +2,14 @@
     border: 1px black solid;
     background-color : #ccc;
     padding: 0.5em;
+    position: relative;
 }
+
+button {
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color:white;
+}
+
