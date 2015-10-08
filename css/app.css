@@ -1,8 +1,9 @@
 .announcement {
     border: 1px black solid;
     background-color : #ccc;
-    padding: 0.5em;
+    padding: 0.8em;
     position: relative;
+    overflow: hidden;
 }
 
 button {
@@ -12,4 +13,3 @@ button {
     right: 3px;
     background-color:white;
 }
-
